@@ -8,3 +8,142 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+  - package-ecosystem: github-actions
+    directory: /.github/actions/get-chart
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      routine-updates:
+        patterns:
+        - '*'
+        update-types:
+        - minor
+        - patch
+  - package-ecosystem: helm
+    directories:
+    - /bitnami/airflow
+    - /bitnami/apache
+    - /bitnami/apisix
+    - /bitnami/appsmith
+    - /bitnami/argo-cd
+    - /bitnami/argo-workflows
+    - /bitnami/aspnet-core
+    - /bitnami/cadvisor
+    - /bitnami/cassandra
+    - /bitnami/cert-manager
+    - /bitnami/chainloop
+    - /bitnami/cilium
+    - /bitnami/clickhouse
+    - /bitnami/clickhouse-operator
+    - /bitnami/cloudnative-pg
+    - /bitnami/common
+    - /bitnami/concourse
+    - /bitnami/consul
+    - /bitnami/contour
+    - /bitnami/deepspeed
+    - /bitnami/discourse
+    - /bitnami/dremio
+    - /bitnami/drupal
+    - /bitnami/ejbca
+    - /bitnami/elasticsearch
+    - /bitnami/envoy-gateway
+    - /bitnami/etcd
+    - /bitnami/external-dns
+    - /bitnami/flink
+    - /bitnami/fluent-bit
+    - /bitnami/fluentd
+    - /bitnami/flux
+    - /bitnami/ghost
+    - /bitnami/gitea
+    - /bitnami/gitlab-runner
+    - /bitnami/grafana
+    - /bitnami/grafana-alloy
+    - /bitnami/grafana-k6-operator
+    - /bitnami/grafana-loki
+    - /bitnami/grafana-mimir
+    - /bitnami/grafana-operator
+    - /bitnami/grafana-tempo
+    - /bitnami/haproxy
+    - /bitnami/harbor
+    - /bitnami/influxdb
+    - /bitnami/jaeger
+    - /bitnami/janusgraph
+    - /bitnami/jenkins
+    - /bitnami/jupyterhub
+    - /bitnami/kafka
+    - /bitnami/keycloak
+    - /bitnami/keydb
+    - /bitnami/kibana
+    - /bitnami/kong
+    - /bitnami/kube-arangodb
+    - /bitnami/kube-prometheus
+    - /bitnami/kube-prometheus/charts/kube-prometheus-crds
+    - /bitnami/kube-state-metrics
+    - /bitnami/kuberay
+    - /bitnami/kubernetes-event-exporter
+    - /bitnami/logstash
+    - /bitnami/mariadb
+    - /bitnami/mariadb-galera
+    - /bitnami/mastodon
+    - /bitnami/matomo
+    - /bitnami/memcached
+    - /bitnami/metallb
+    - /bitnami/metrics-server
+    - /bitnami/milvus
+    - /bitnami/mlflow
+    - /bitnami/mongodb
+    - /bitnami/mongodb-sharded
+    - /bitnami/moodle
+    - /bitnami/multus-cni
+    - /bitnami/mysql
+    - /bitnami/nats
+    - /bitnami/neo4j
+    - /bitnami/nessie
+    - /bitnami/nginx
+    - /bitnami/node-exporter
+    - /bitnami/oauth2-proxy
+    - /bitnami/odoo
+    - /bitnami/opensearch
+    - /bitnami/parse
+    - /bitnami/phpmyadmin
+    - /bitnami/pinniped
+    - /bitnami/postgresql
+    - /bitnami/postgresql-ha
+    - /bitnami/prometheus
+    - /bitnami/pytorch
+    - /bitnami/rabbitmq
+    - /bitnami/rabbitmq-cluster-operator
+    - /bitnami/redis
+    - /bitnami/redis-cluster
+    - /bitnami/redmine
+    - /bitnami/schema-registry
+    - /bitnami/scylladb
+    - /bitnami/sealed-secrets
+    - /bitnami/seaweedfs
+    - /bitnami/solr
+    - /bitnami/sonarqube
+    - /bitnami/spark
+    - /bitnami/superset
+    - /bitnami/tensorflow-resnet
+    - /bitnami/thanos
+    - /bitnami/tomcat
+    - /bitnami/valkey
+    - /bitnami/valkey-cluster
+    - /bitnami/vault
+    - /bitnami/victoriametrics
+    - /bitnami/whereabouts
+    - /bitnami/wildfly
+    - /bitnami/wordpress
+    - /bitnami/zipkin
+    - /bitnami/zookeeper
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      routine-updates:
+        patterns:
+        - '*'
+        update-types:
+        - minor
+        - patch
